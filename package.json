@@ -1,0 +1,28 @@
+{
+  "name": "palindrome-bootcamp",
+  "version": "1.0.0",
+  "description": "palindrome checker app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shannonmoulton/node-palindrome-bootcamp.git"
+  },
+  "author": "Shannon Moulton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shannonmoulton/node-palindrome-bootcamp/issues"
+  },
+  "homepage": "https://github.com/shannonmoulton/node-palindrome-bootcamp#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "figlet": "^1.5.2",
+    "mongodb": "^4.1.3",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7"
+  }
+}

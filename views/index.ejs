@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palindrome Checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Palindrome Checker</h1>
+  <p>Enter in a name or word to check if it is a Palindrome.</p>
+      <section>
+          <form action="/messages" method="POST">
+        <input type="text" placeholder="name/word" name="name">
+        <button type="submit">CHECK</button>
+          </form>
+      </section>
+      <h3>List of Results</h3>
+        <ul class="messages">
+        <% for(var i=0; i<messages.length; i++) {%>
+      <li class="message">
+        <span><%= messages[i].name %></span>
+        <span> = <%= messages[i].palindrome %></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+      </li>
+        <% } %>
+        </ul>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
+  
